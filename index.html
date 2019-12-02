@@ -8,7 +8,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <title>Weather-Dashboard</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet"  type = "text/css" href="style.css"/>
     
     
 </head>
@@ -17,23 +17,16 @@
      <nav class = "navbar navbar-dark big-dark">
         <a class = "navbar-brand" href = "#">Weather Dashboard</a>
      </nav>
-     <div class="topnav">
-        <a class=>Search for the City</a>
-        <div class="search-container">
-          <form action="/action_page.php">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-      </div>
+     <div id="searchContainer">
+      <input class="searchControl" type="text" placeholder="City Name" id="searchInput">
+      <button class="searchControl" id="searchBtn">Search</button>
+ 
       <div id="test"></div>
       <div id= "temp"></div>
       <div id= "description"></div>
       <div id="place"></div>
       
-      <button id = "find-me">Show my location</button><br/>
-      <p id = "status"></p>
-      <a id = "map-link" target="_blank"></a> 
+    
       <script src="script.js"></script>   
 </body>
 </html>
