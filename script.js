@@ -96,6 +96,11 @@ $(document).ready(function(){
               var wind = "Wind Speed: " + data.wind.speed + " " + "mph";
               var windSpeed = $("#windSpeed");
               $(windSpeed).html(wind);
+            
+              //Displaying UV Index
+              var uv = "UV Index:" + uvIndex + " " + " ";
+              var uvIndex = $("#uvIndex");
+              $(uvIndex).html(uv);
               
 
               
