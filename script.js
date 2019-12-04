@@ -98,7 +98,7 @@ $(document).ready(function(){
               $(windSpeed).html(wind);
             
               //Displaying UV Index
-              var uv = "UV Index:" + uvIndex + " " + " ";
+              var uv = "UV Index: " + data.coord.lat;
               var uvIndex = $("#uvIndex");
               $(uvIndex).html(uv);
               
