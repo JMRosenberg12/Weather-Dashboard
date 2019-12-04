@@ -351,5 +351,8 @@ $(document).ready(function(){
 
   });
 });
+// Trying to save data with local storage
 
-document.getElementById('cityName') = localStorage.getItem("data.name");
+var weather = document.querySelector("weather")
+
+localStorage.setItem("weather", weather)
