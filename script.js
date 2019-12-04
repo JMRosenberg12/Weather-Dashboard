@@ -22,14 +22,23 @@ updateTime();
 $(document).ready(function(){
   $("#searchBtn").click(function(){
       var city = $("#searchInput").val();
-      $("#cityHistory").append("<button>"+city+"</button>");
+      // check if there's already a text box! if there is, delete it and put a new one in.
+      $('button:contains("'+ city + '")').remove()
       
-      // $("#cityHistory").click(function(event){
 
-      //     var button =  $("#cityHistory").append("<button>"+city+"</button>");
-
-      // });
       
+
+    var button = $("<button>" + city+"</button>");
+    $("#cityHistory").append(button)
+
+    button.click(function(){
+    //    $("text").click ()
+        $("#searchInput").val(button.text());
+        $("#searchBtn").click()
+        
+      });
+      
+     
       
       
       var key = "14cfb4498e6f8e56ffed5252dd7f2167";
