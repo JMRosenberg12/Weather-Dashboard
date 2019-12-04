@@ -37,8 +37,18 @@ $(document).ready(function(){
         $("#searchBtn").click()
         
       });
+
+
       
-     
+    
+    
+      
+      // $("#cityHistory").click(function(event){
+
+      //     var button =  $("#cityHistory").append("<button>"+city+"</button>");
+
+      // });
+      
       
       
       var key = "14cfb4498e6f8e56ffed5252dd7f2167";
@@ -341,3 +351,5 @@ $(document).ready(function(){
 
   });
 });
+
+document.getElementById('cityName') = localStorage.getItem("data.name");
